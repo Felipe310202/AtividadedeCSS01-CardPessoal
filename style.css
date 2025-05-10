@@ -5,7 +5,6 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body, html {
   background-color: #1a1a2e;
   display: flex;
@@ -15,7 +14,6 @@ body, html {
   overflow: hidden;
   position: relative;
 }
-
 body::before {
   content: '';
   position: absolute;
@@ -26,12 +24,10 @@ body::before {
   z-index: -1;
   filter: blur(50px);
 }
-
 @keyframes backgroundMove {
   0% { transform: translate(-50%, -50%) rotate(0deg); }
   100% { transform: translate(50%, 50%) rotate(360deg); }
 }
-
 /* Card Container */
 .card {
   background-color: #2f2f44;
@@ -46,17 +42,14 @@ body::before {
   transition: transform 0.5s, box-shadow 0.5s;
   animation: cardEnter 0.8s ease forwards;
 }
-
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.7);
 }
-
 @keyframes cardEnter {
   from { opacity: 0; transform: translateY(30px) scale(0.8); }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
-
 .img-container {
   width: 130px;
   height: 130px;
@@ -66,36 +59,30 @@ body::before {
   border: 4px solid #0073e6;
   transition: transform 0.4s, box-shadow 0.4s;
 }
-
 .img-container:hover {
   transform: rotate(360deg);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
 }
-
 .img-container a {
   display: block;
   width: 100%;
   height: 100%;
 }
-
 .profile-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: opacity 0.5s;
 }
-
 .img-container:hover .profile-img {
   opacity: 0.8;
 }
-
 h2 {
   font-size: 26px;
   color: #ffffff;
   margin-bottom: 10px;
   animation: textFade 1.2s ease forwards;
 }
-
 .profession {
   font-size: 16px;
   color: #0073e6;
@@ -103,7 +90,6 @@ h2 {
   margin-bottom: 15px;
   animation: textFade 1.5s ease forwards;
 }
-
 .bio {
   font-size: 14px;
   color: #b0b0b0;
@@ -112,19 +98,16 @@ h2 {
   padding: 0 15px;
   animation: textFade 1.8s ease forwards;
 }
-
 @keyframes textFade {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 /* Social Buttons */
 .social {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
-
 .btn {
   background-color: #0073e6;
   color: #ffffff;
@@ -136,14 +119,12 @@ h2 {
   position: relative;
   overflow: hidden;
 }
-
 .btn:hover {
   background-color: #ff6b6b;
   transform: translateY(-5px) scale(1.1);
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
-
-.btn:active {
+.bt:active {
   transform: translateY(0);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
